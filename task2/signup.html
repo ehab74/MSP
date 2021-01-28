@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Signup</title>
+    <link href="signstyle.css" rel="stylesheet" type="text/css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="Info.js"></script>
+    
+</head>
+
+    <body>
+        <div id="wel" value='welcome'>
+            <h1>Welcome</h1>
+        <button id = 'signup' onclick="document.getElementById('signup_form').style.display='block';document.getElementById('wel').style.display='none'">Sign Up</button>
+        <button id = 'login' onclick="document.getElementById('login_form').style.display='block';document.getElementById('wel').style.display='none'">Login</button>
+        </div>
+        
+        <form id="signup_form" method="POST">
+            <div>
+                <span id="close" onclick="document.getElementById('wel').style.display='block';document.getElementById('signup_form').style.display='none'">&times;</span>
+            </div>
+           
+            <!--logo-->
+            <div id="logo">
+            <h1><center><b>Sign Up</b></center></h1>
+            </div>
+
+            <!--info box -->
+            <div id="inform">
+
+                <div id="name">
+                
+                <input type="text" name="fname" placeholder="First-Name" class="iput" id = 'fname'>
+
+                <input type="text" name="lname" placeholder="Last-Name"><br>
+                </div>
+
+                <div id="email">
+
+                <input type="email" name="mail" placeholder="E-mail"><br>
+                </div>
+
+                <div id="call">
+                <input type="phone" name="phone" placeholder="Phone"><br>
+                </div>
+                
+                <div >
+                <select name="Gender" id="gene">
+                    <option>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+                </div>
+
+                <div id="passandco">
+                <input type="password" name="pass" placeholder="password"><br>
+
+                <input type="password" name="conpass" placeholder="confirm password"><br>
+                </div>
+
+                <!--button-->
+                <div>
+                    <button type="submit" form="signup_form" id="btngo" onclick="printData()">Sign up</button>
+                </div>
+                <div >
+                <button type="submit" form = "signup_form" id="gogbtn"><i  class='fab fa-google'></i></button>
+                
+                <button type="submit" form = "signup_form" id="facbtn"><i class='fab fa-facebook-f'></i></button>
+                </div>
+                
+            </div> 
+        </form>
+
+        <form id="login_form" method="POST">
+            <div id = "inform">
+                <div>
+                    <span id="close" onclick="document.getElementById('wel').style.display='block';document.getElementById('login_form').style.display='none'">&times;</span>
+                </div>
+
+                <div id="logo">
+                    <h1><center><b>Login</b></center></h1>
+                </div>
+
+                <div id="email">
+                    <input type="email" name="mail" placeholder="E-mail"><br>
+                </div>
+                <div id="passandco">
+                    <input type="password" name="pass" placeholder="password"><br>
+                </div>
+                <button type="submit" form="login_form" id="btngo">Login</button>
+            </div>    
+        </form>      
+    </body>
+</html>

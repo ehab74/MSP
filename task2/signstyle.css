@@ -1,0 +1,235 @@
+/*background of form*/
+html {
+  background-image: url("https://astylecollector.files.wordpress.com/2015/11/melbourne-city-view-buildings-eureka-skydeck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: content-box;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.78);
+  min-height: 100%;
+}
+
+/*modal appearance*/
+#signup_form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 7em;
+  border-style: initial;
+  border-radius: 5em;
+  box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.705),
+    0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.822);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding-bottom: 7em;
+  display: none;
+  animation: appear 0.8s;
+}
+#login_form {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 7em;
+  padding-bottom: 7em;
+  border-style: initial;
+  border-radius: 5em;
+  box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.705),
+    0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.822);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.267);
+
+  display: none;
+  animation: appear 0.8s;
+}
+
+/*modal animation*/
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#inform {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: -3em;
+}
+
+
+
+/*LOGO*/
+
+#logo {
+  max-width: 200px;
+  margin: auto;
+  margin-top: -30px;
+  margin-bottom: 1.5em;
+  padding-top: 4rem;
+  color: #ffffff;
+}
+#wel {
+  padding-top: 180px;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-family:Arial, Helvetica, Arial, sans-serif;
+}
+
+/*textboxes*/
+
+input {
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+#gene {
+  width: 200px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+}
+
+/*buttons*/
+
+#btngo {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  background-color: crimson;
+  border-radius: 3px;
+  border: rgba(0, 0, 0, 0.3) 2px solid;
+
+  height: 40px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+#btngo:hover {
+  background-color: rgb(189, 66, 66);
+}
+
+
+#gogbtn {
+  font-size: 14px;
+  background-color: #f92c2c;
+  color: #ffffff;
+  max-width: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px #999;
+}
+
+#gogbtn:hover {
+  background-color: #fc1313;
+}
+
+#gogbtn:active {
+  background-color: #fb8e8e;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+#facbtn {
+  display: inline-block;
+  font-size: 14px;
+  background-color: rgb(46, 58, 230);
+  color: #ffffff;
+  max-width: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px #999;
+}
+
+#facbtn:hover {
+  background-color: #0016ff;
+}
+
+#facbtn:active {
+  background-color: #6a74f7;
+  box-shadow: 0 4px #666;
+  transform: translateY(3px);
+}
+
+#signup {
+  position: relative;
+  margin-top:110px;
+  height: 100px;
+  width: 200px;
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  background: -moz-linear-gradient(
+        top,
+        #dc143c 0%,
+        #be3749);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#dc143c),
+        to(#be3749));
+
+ 
+}
+
+#login {
+  position: relative;
+  margin-top:110px;
+  margin-left:90px;
+  height: 100px;
+  width: 200px;
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  background: -moz-linear-gradient(
+        top,
+        #dc143c 0%,
+        #be3749);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#dc143c),
+        to(#be3749));
+
+}
+/*close button*/
+#close {
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    left: 280px;
+    font-size: 30px;
+    color: white;
+  }
+
+#output{
+ color: white;
+ font-size: 30px;
+ border-radius: 5px;
+ font-family:Arial, Helvetica, Arial, sans-serif;
+}
+
+#outform{
+  box-shadow: 0.1em 2em 2em 0.2em rgba(0, 0, 0, 0.705),
+    0.5em 3em 3em 0.5em rgba(0, 0, 0, 0.822);
+  margin-top: 70px;
+  margin-left: 680px;
+  margin-right: 700px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
